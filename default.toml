@@ -7,7 +7,7 @@ title = "Dummy configuration"
 database_type = "psql"
 database_server_address = ""
 database_login = ""
-datapase_password = ""
+database_password = ""
 database_specific_database = ""
 
 [job]
