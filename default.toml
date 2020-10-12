@@ -1,0 +1,14 @@
+# Dummy configuration - to be replaced in production
+# for Ellie Lockhart natural language research project
+
+title = "Dummy configuration"
+
+[database]
+database_type = "psql"
+database_server_address = ""
+database_login = ""
+datapase_password = ""
+database_specific_database = ""
+
+[job]
+table_to_process = ""
