@@ -5,26 +5,23 @@
 from textblob import TextBlob
 import toml
 
-# remove for production - prevents insecure values from being used
-# in database configuration
-global_test = 1
-
-
 # function to load the configuration file
 class DataUniverseConfiguration(object):
 
-    def __init__(self, file, address, database, user, password, table):
+    def __init__(self, file, address, database, user, password, table, global_test):
         self.file = file
         self.address = address
         self.database = database
         self.user = user
         self.password = password
         self.table = table
+        # check if this is a test of data import
+        self.global_test = global_test
 
 
     def populate(self, file):
         # temporary test to ensure the library has been properly imported
-        if global_test == 1:
+        if self.global_test == 1:
             self.file = "default.toml"
         else:
             self.file = "config.toml"
