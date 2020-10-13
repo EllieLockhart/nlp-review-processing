@@ -123,6 +123,12 @@ class ResearchObject(object):
             print(raw_blob)
             conn.close
 
+        print("Preprocessing blob: spell check")
+        prepro_blob = TextBlob(raw_blob)
+        prepro_blob1 = prepro_blob.correct()
+        print("Spell check complete.")
+
+
 
 
 
