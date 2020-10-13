@@ -78,7 +78,7 @@ def connect_postgre():
 
             for rvw in reviews:
                 numberSuffix = str(rvwn)
-                db_insert_query = """ INSERT INTO tlou2_metacritic_10_12 (review_number, review_text) VALUES (%s,%s)"""
+                db_insert_query = """ INSERT INTO tlou2_metacritic_10_13 (review_number, review_text) VALUES (%s,%s)"""
                 db_review_selection = (rvwn, rvw.text)
                 db_cur.execute(db_insert_query, db_review_selection)
                 db_conn.commit()
