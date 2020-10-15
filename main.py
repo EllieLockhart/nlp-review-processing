@@ -72,30 +72,6 @@ class DataUniverseConfiguration(object):
             print("Server login test complete, logging out.")
             conn.close
 
-class ResearchObject(object):
-
-    def __init__(self, ngram_depth, correct_spelling, word_freq_1, word_freq_2, word_freq_3, word_freq_4, word_freq_5, word_freq_6, word_freq_7, word_freq_8, word_freq_9, word_freq_10, word_freq_11, word_freq_12, word_freq_13, word_freq_14, word_freq_15, word_freq_16, word_freq_17, word_freq_18):
-        self.ngram_depth = ngram_depth
-        self.correct_spelling = correct_spelling
-        self.word_freq_1 = ""
-        self.word_freq_2 = ""
-        self.word_freq_3 = ""
-        self.word_freq_4 = ""
-        self.word_freq_5 = ""
-        self.word_freq_6 = ""
-        self.word_freq_7 = ""
-        self.word_freq_8 = ""
-        self.word_freq_9 = ""
-        self.word_freq_10 = ""
-        self.word_freq_11 = ""
-        self.word_freq_12 = ""
-        self.word_freq_13 = ""
-        self.word_freq_14 = ""
-        self.word_freq_15 = ""
-        self.word_freq_16 = ""
-        self.word_freq_17 = ""
-        self.word_freq_18 = ""
-
     # never call this function without an open database connection!
     def populate(self):
         conn = None
