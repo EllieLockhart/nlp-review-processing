@@ -20,6 +20,9 @@ import lxml
 # import client-side data handling
 import pandas as pd
 
+base_url_global = user_input_base_url()
+working_url_stem = create_working_url(base_url_global)
+
 def user_input_base_url():
     print('Service Script for Entertainment Marketing Data Analysis')
     print('target site and purpose: Metacritic video game user reviews')
@@ -41,5 +44,4 @@ def create_working_url(raw_url):
     # pass the working URL out into the actual working URL for the program as a whole
     return passing_url
 
-base_url_global = user_input_base_url()
-working_url_stem = create_working_url(base_url_global)
+def 
