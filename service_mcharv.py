@@ -17,3 +17,6 @@ from bs4 import BeautifulSoup
 # also may be able to exclude lxml, but it has improved parsing results in the past
 # I advise including it, as a "good luck charm"
 import lxml
+# import client-side data handling
+import pandas as pd
+
